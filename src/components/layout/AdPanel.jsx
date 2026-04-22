@@ -1,8 +1,11 @@
+import logo2 from '../../assets/logo2.png';
+
 export function AdPanel() {
   return (
     <aside id="vappy-shop-promo" className="glass-panel scroll-mt-24 overflow-hidden">
       <div className="grid gap-0 xl:grid-cols-[minmax(280px,0.9fr)_minmax(0,2.1fr)]">
         <div className="bg-slate-900 px-6 py-6 text-white sm:px-8">
+          <img src={logo2} alt="VappyBuilder" className="mb-5 h-20 w-auto" />
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-200">Vappy Shop</p>
           <h2 className="mt-2 text-2xl font-semibold sm:text-3xl">Extra services can live here without shrinking the preview.</h2>
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-200">

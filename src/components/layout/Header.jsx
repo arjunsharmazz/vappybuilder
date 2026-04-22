@@ -1,12 +1,17 @@
+import logo1 from '../../assets/logo1.png';
+
 export function Header({ onScrollToBuilder }) {
   return (
     <header className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
       <div className="glass-panel overflow-hidden px-6 py-6 sm:px-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl space-y-4">
-            <span className="inline-flex rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand">
-              VappyBuilder
-            </span>
+            <div className="flex items-center gap-4">
+              <img src={logo1} alt="VappyBuilder" className="h-14 w-auto sm:h-16" />
+              <span className="inline-flex rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand">
+                Resume Builder
+              </span>
+            </div>
             <div className="space-y-3">
               <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
                 Build polished resumes, CVs, and biodata in a few easy steps.
